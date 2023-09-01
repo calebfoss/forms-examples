@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-size: 1.5rem;
+        }
+
+        .contact {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .weekdays {
+            display: grid;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <fieldset>
+            <legend>Contact Information</legend>
+            <div class="contact">
+                <label for="name">Name</label>
+                <input name="name" id="name" type="text" placeholder="First Last" required>
+                <label for="email">Email</label>
+                <input name="email" id="email" type="email" placeholder="name@provider.com" required>
+                <label for="phone">Phone number</label>
+                <input name="phone" id="phone" type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                    placeholder="555-555-5555" required>
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Availability</legend>
+            <div class="weekdays">
+                <div>
+                    <input name="monday" id="avail_mon" type="checkbox">
+                    <label for="avail_mon">Monday</label>
+                </div>
+                <div>
+                    <input name="tuesday" id="avail_tues" type="checkbox">
+                    <label for="avail_tues">Tuesday</label>
+                </div>
+                <div>
+                    <input name="wednesday" id="avail_wed" type="checkbox">
+                    <label for="avail_wed">Wednesday</label>
+                </div>
+                <div>
+                    <input name="Thursday" id="avail_thu" type="checkbox">
+                    <label for="avail_thu">Thursday</label>
+                </div>
+                <div>
+                    <input name="friday" id="avail_fri" type="checkbox">
+                    <label for="avail_fri">Friday</label>
+                </div>
+            </div>
+        </fieldset>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+
+
+</html>
